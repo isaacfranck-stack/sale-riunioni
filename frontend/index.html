@@ -1,13 +1,32 @@
 <!doctype html>
+<!-- 1. Dichiarazione del tipo di documento e lingua -->
+<!-- Comunica al browser che la pagina utilizza lo standard HTML5 attuale. -->
+<!-- L'attributo lang="en" indica che la lingua principale del documento è l'inglese (puoi cambiarla in "it" se preferisci). -->
 <html lang="en">
   <head>
+    <!-- 2. Configurazione dei Metadati dell'intestazione -->
+    <!-- Imposta la codifica dei caratteri globale su UTF-8 per visualizzare correttamente accenti, simboli ed emoji. -->
     <meta charset="UTF-8" />
+    
+    <!-- Definisce l'icona personalizzata (favicon) che compare nella scheda del browser accanto al titolo della pagina. -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Configura il Viewport (fondamentale per il Responsive Design): dice al browser mobile di adattare -->
+    <!-- la larghezza della pagina a quella dello schermo del dispositivo corrente, impostando lo zoom iniziale a 1.0. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Il titolo testuale che compare nella scheda del browser (puoi rinominarlo ad esempio in "Gestionale Sale Riunioni"). -->
     <title>frontend</title>
   </head>
   <body>
+    <!-- 3. Il punto di ancoraggio dell'applicazione (Root) -->
+    <!-- Questo div vuoto è l'elemento fondamentale in cui React si "aggancia" (tramite il comando createRoot visto nel file main.tsx). -->
+    <!-- Tutto il codice HTML generato dai componenti React verrà inserito automaticamente dentro questo blocco. -->
     <div id="root"></div>
+    
+    <!-- 4. Caricamento del punto di ingresso JavaScript -->
+    <!-- Avvia l'esecuzione del codice dell'applicazione caricando lo script principale come modulo JavaScript moderno. -->
+    <!-- Da qui partirà l'inizializzazione di main.tsx e, di conseguenza, di tutta l'applicazione. -->
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
